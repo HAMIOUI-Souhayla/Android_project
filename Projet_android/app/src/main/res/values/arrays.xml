@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="items_array">
+        <item>Plombier</item>
+        <item>Électricien</item>
+        <item>Menuisier</item>
+
+    </string-array>
+
+    <string-array name="villes_array">
+        <item>Agadir</item>
+        <item>Aït Melloul</item>
+        <item>Al Hoceima</item>
+        <item>Asilah</item>
+        <item>Azemmour</item>
+        <item>Béni Mellal</item>
+        <item>Béni Saf</item>
+        <item>Berkane</item>
+        <item>Boujdour</item>
+        <item>Boulemane</item>
+        <item>Casablanca</item>
+        <item>Chefchaouen</item>
+        <item>Dakhla</item>
+        <item>El Jadida</item>
+        <item>Errachidia</item>
+        <item>Essaouira</item>
+        <item>Fès</item>
+        <item>Guelmim</item>
+        <item>Guelmim-Oued Noun</item>
+        <item>Ifrane</item>
+        <item>Inezgane-Aït Melloul</item>
+        <item>Jerada</item>
+        <item>Kénitra</item>
+        <item>Khémisset</item>
+        <item>Khénifra</item>
+        <item>Khouribga</item>
+        <item>Laâyoune</item>
+        <item>Laâyoune-Sakia El Hamra</item>
+        <item>Larache</item>
+        <item>Marrakech</item>
+        <item>M\'diq-Fnideq</item>
+        <item>Meknès</item>
+        <item>Mohammédia</item>
+        <item>Nador</item>
+        <item>Ouarzazate</item>
+        <item>Oued Ed-Dahab</item>
+        <item>Oued Ed-Dahab-Lagouira</item>
+        <item>Oujda-Angad</item>
+        <item>Rabat</item>
+        <item>Safi</item>
+        <item>Sefrou</item>
+        <item>Sidi Kacem</item>
+        <item>Tanger-Tétouan-Al Hoceima</item>
+        <item>Tan-Tan</item>
+        <item>Taza</item>
+        <item>Témara</item>
+        <item>Tétouan</item>
+        <item>Tinghir</item>
+        <item>Tiznit</item>
+        <item>Zagora</item>
+
+    </string-array>
+
+</resources>

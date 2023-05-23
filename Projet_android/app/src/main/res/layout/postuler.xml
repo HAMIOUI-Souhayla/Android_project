@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="414dp"
+        android:layout_height="57dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarmain"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:backgroundTint="@color/cardview_dark_background"
+         >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView3"
+                android:layout_width="62dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+            <!--            android:background="@drawable/round"-->
+
+            <TextView
+                android:id="@+id/usernameonmainactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aaalah"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-122dp">
+
+
+        <!-- android:background="@drawable/circle_background" -->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/avatar"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="153dp"-->
+        <!--            android:layout_alignParentStart="true"-->
+
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_marginStart="114dp"-->
+        <!--            android:layout_marginTop="94dp"-->
+        <!--            android:layout_marginEnd="131dp"-->
+        <!--            android:scaleType="centerCrop"-->
+
+        <!--            app:srcCompat="@drawable/profile" />-->
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="wrap_content"
+            android:layout_height="516dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="151dp"
+            app:background="@drawable/radius4"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="src_over"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.324"
+            app:strokeColor="@color/black"
+            tools:ignore="BottomAppBar,MissingConstraints" />
+
+        <Spinner
+            android:id="@+id/adress"
+            android:layout_width="358dp"
+            android:layout_height="40dp"
+
+            android:layout_above="@+id/button2"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/radius_spinner"
+            android:entries="@array/villes_array"
+            android:fadeScrollbars="false"
+            android:prompt="@string/select_ville"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spinner"
+            android:layout_alignTop="@+id/bottomAppBar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:drawableLeft="@drawable/baseline_domain_24"
+            android:text=" Sélectionnez votre domaine:"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/upload"
+            android:drawableRight="@drawable/baseline_drive_folder_upload_24"
+            android:text=""
+            android:textSize="10dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="358dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/radius_spinner"
+            android:drawableLeft="@drawable/logo"
+            android:entries="@array/items_array"
+            android:fadeScrollbars="false"
+            android:prompt="@string/select_item"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/desc"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-9dp"
+            android:drawableLeft="@drawable/baseline_description_24"
+            android:text="Saisir votre description"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/upload"
+
+            android:drawableRight="@drawable/baseline_drive_folder_upload_24"
+            android:onClick="open"
+            android:text=""
+            android:textSize="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/adress"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:drawableLeft="@drawable/baseline_location_on_24"
+            android:text="Sélectionnez votre Ville:"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="25dp"
+
+            android:layout_marginEnd="28dp"
+
+            android:layout_marginBottom="221dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="63dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="#000000"
+            android:drawableTint="#FFFFFF"
+            android:text="Envoyer la demande"
+            android:textColor="@color/white"
+            app:iconTint="#FFFFFFff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.808" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="351dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="-6dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="342dp"
+            app:srcCompat="@drawable/logo" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

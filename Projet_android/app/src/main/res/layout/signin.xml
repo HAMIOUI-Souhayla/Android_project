@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="screen"
+    tools:context=".Main" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aaalah"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="154dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="405dp"
+            android:layout_height="369dp"
+            android:layout_above="@+id/email"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="37dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="105dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Connexion"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/cnxbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/creecmpt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="86dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="15dp"
+
+            android:background="@drawable/radius"
+            android:text="Connexion"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:iconTint="#F2391B04" />
+
+        <TextView
+            android:id="@+id/creecmpt"
+            android:layout_width="317dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="76dp"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Créer un compte "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="360dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="41dp"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Email"
+
+            android:inputType="textEmailAddress"
+            android:paddingStart="22dp"
+            android:textAlignment="viewStart"
+            android:textColor="#070707"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.978" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="360dp"
+            android:layout_height="43dp"
+            android:layout_above="@+id/cnxbutton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="63dp"
+            android:background="@drawable/radius"
+            android:drawableRight="@drawable/baseline_visibility_off_24"
+            android:ems="10"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:paddingStart="22dp"
+            android:paddingRight="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="#070707"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.978" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="414dp"
+        android:layout_height="57dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarmain"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:backgroundTint="@color/cardview_dark_background"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView3"
+                android:layout_width="62dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+            <!--            android:background="@drawable/round"-->
+
+            <TextView
+                android:id="@+id/usernameonmainactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aaalah"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-122dp"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+
+
+        android:textStyle="bold">
+
+
+        <!-- android:background="@drawable/circle_background" -->
+
+
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/avatar"-->
+<!--            android:layout_width="108dp"-->
+<!--            android:layout_height="96dp"-->
+<!--            android:layout_alignParentStart="true"-->
+
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginStart="162dp"-->
+<!--            android:layout_marginTop="141dp"-->
+<!--            android:layout_marginEnd="141dp"-->
+<!--            android:scaleType="centerCrop"-->
+
+<!--            app:srcCompat="@drawable/profile" />-->
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="342dp"
+            app:srcCompat="@drawable/logo" />
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="469dp"
+            app:background="@drawable/radius4"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="src_over"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.324"
+            app:strokeColor="@color/black"
+            tools:ignore="BottomAppBar,MissingConstraints" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="376dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="62dp"
+            app:backgroundTint="@android:color/transparent"
+            tools:ignore="BottomAppBar,MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="176dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+
+            android:textSize="10dp"
+            android:drawableLeft="@drawable/baseline_download_24"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_above="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="221dp"
+            android:layout_marginBottom="42dp"
+            android:drawableLeft="@drawable/baseline_domain_24"
+            android:text=" Mon domaine:"
+
+
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="122dp"
+            android:layout_height="18dp"
+            android:layout_above="@+id/textView12"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="246dp"
+            android:layout_marginBottom="41dp"
+            android:drawableLeft="@drawable/baseline_location_on_24"
+            android:text="Ma ville:"
+
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView2"
+            android:layout_alignTop="@+id/bottomAppBar2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="42dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/button3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="97dp"
+            android:layout_height="18dp"
+            android:layout_above="@+id/textView13"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="279dp"
+            android:layout_marginBottom="61dp"
+            android:drawableLeft="@drawable/baseline_co_present_24"
+
+            android:text=" Mon cv"
+            android:textSize="12sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="144dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="243dp"
+            android:layout_marginBottom="198dp"
+            android:drawableLeft="@drawable/baseline_credit_card_24"
+            android:text=" Ma Carte nationale"
+            android:textAlignment="viewStart"
+            android:textSize="11sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="140dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="245dp"
+            android:layout_marginBottom="124dp"
+            android:drawableLeft="@drawable/baseline_description_24"
+            android:text=" Ma description"
+            android:textAlignment="viewStart"
+
+            android:textSize="12sp"
+            android:textStyle="bold|italic"
+
+            />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="86dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="79dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView17"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="176dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="14dp"
+
+
+            android:drawableLeft="@drawable/baseline_download_24"
+            android:text=""
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="351dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="-15dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Suivre ma demande"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="489dp"
+            android:text="Modifier ma demande" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/bottomAppBar"
+            android:layout_alignTop="@+id/bottomAppBar"
+            android:layout_alignEnd="@+id/bottomAppBar"
+            android:layout_alignBottom="@+id/bottomAppBar"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/baseline_dangerous_24"
+
+
+            android:text=" "
+            android:textAllCaps="true" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

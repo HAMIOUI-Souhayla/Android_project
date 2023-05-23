@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheming" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_200</item>
+        <item name="colorAccent">@color/purple_200</item>
+    </style>
+
+
+    <style name="MenuStyle" parent="ThemeOverlay.AppCompat.Dark">
+
+
+        <item name="android:background">#1a1a1a</item>
+
+    </style>
+
+
+</resources>

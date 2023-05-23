@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbarmain"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:backgroundTint="@color/cardview_dark_background">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="62dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/profile"
+                            app:civ_border_color="#FFFFFF"
+                            app:civ_border_width="2dp" />
+
+                        <TextView
+                            android:id="@+id/usernameonmainactivity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:textSize="15sp" />
+
+                </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="96dp"
+            app:layout_constraintTop_toBottomOf="@id/appBarLayout"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/recherche"
+            android:layout_width="378dp"
+            android:layout_height="33dp"
+            android:queryHint="Rechercher Ici"
+            app:layout_constraintBottom_toTopOf="@+id/recycler1"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+            app:layout_constraintVertical_bias="0.428"
+            tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
